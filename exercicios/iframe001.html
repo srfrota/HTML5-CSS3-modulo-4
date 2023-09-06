@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+    <!-- As configurações CSS são sempre soberanas as demais -->
+    <title>Estudos de iframe</title>
+</head>
+<body>
+    <h1>Testando o uso de iframe</h1>
+    <p>
+        Acessando o site do
+        
+        <!-- Tamanho padrão 300x150px -->
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" height="500px" scolling="no"> <!-- O parâmetro "frameborder só aceita 0 e 1, onde 0 é sem borda e 1 é com borda. Porém, é possível personalizar as bordas através das CSS. "-->
+            <a href="https://gustavoguanabara.github.io" target="_blank">Curso em Vídeo</a>
+        </iframe>
+
+        para aprender a programar
+    </p>
+    <p>
+        O repositório do Guanabara no
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500px" width="500px">
+            <a href="https://gustavoguanabara.github.io" target="_blank"> GitHub</a>
+        </iframe>
+
+        também é bem legal!
+    </p>
+    <p>
+        Podemos acessar o site da 
+
+        <iframe src="https://ge.globo.com/?utm_source=globo.com&utm_medium=header" frameborder="0"></iframe>
+    
+        para vermos conteúdo esportivo.
+    </p>
+
+    <!-- <p>O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe> também é muito legal, pena que não funciona dentro do iframe! </p>  Alguns sites não aceitam o uso de iframe, como podemos ver no site do GOOGLE.COM -->
+</body>
+</html>
