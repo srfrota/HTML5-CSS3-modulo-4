@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorum, sit itaque veritatis magni obcaecati accusamus optio temporibus eligendi libero! Ex explicabo laudantium modi consequuntur tempore odit, itaque soluta ipsum.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quam voluptatem ratione voluptate molestiae quidem natus iste, ea repellat reiciendis perspiciatis, magni obcaecati libero aut, unde doloremque harum ducimus voluptates? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates animi at perspiciatis culpa fugit suscipit nam exercitationem deserunt corrupti, nisi eius dolorem quibusdam cupiditate blanditiis accusamus error, magni expedita hic.</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quia nobis. Temporibus culpa ad, ratione rerum harum dolorem illum aliquam illo provident eius magnam neque rem velit omnis alias saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><img src='imgs/cursoemvideo-logo.png'>" id="tela" name="frame">
+        <!-- srcdoc="" : serve para você colocar um conteúdo estático inicial dentro do iframe. -->
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quia nobis. Temporibus culpa ad, ratione rerum harum dolorem illum aliquam illo provident eius magnam neque rem velit omnis alias saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nobis praesentium nihil esse doloribus veritatis explicabo natus exercitationem corrupti vel dolorem illum sapiente minus voluptate sequi magnam animi facere alias!</p>
+</body>
+</html>
