@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam explicabo ipsa quisquam necessitatibus porro eveniet eligendi voluptates voluptas accusantium consectetur in nisi, vero provident alias similique neque hic. Quis?</p>
+    <iframe src="paginas-extras/pag004.html" sandbox="sandbox" referrerpolicy="no-referrer"> 
+    <!-- A configuração sandbox="sandbox" evita que site maliciosos possam capturar informações do usuários. 
+    Existem outras configurações para liberação pontuais como: sandbox="allow-same-origin allow-forms allow-scripts"
+    
+    allow-same-origin = Permite coisas da mesma origem.
+    allow-forms = Permite formulários.
+    allow-scripts = Permite scripts.
+    -->
+    <!-- A configuração referrerpolicy="no-referrer, evita que o site colete informações do que está sendo acessado."-->
+        Seu navegador não é compatível com isso...
+    </iframe>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit deleniti eum vel maxime quae ratione ad culpa provident repellendus, praesentium ut modi obcaecati doloribus temporibus vero quas dolores nostrum!</p>
+</body>
+</html>
