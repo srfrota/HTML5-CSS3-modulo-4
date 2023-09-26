@@ -12,7 +12,15 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off"> <!-- autocomplete="off", retira o auto completar do formulário -->
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <!-- O metódo GET é utilizado para dados não sensíveis, o metódo POST é utilizado para dados sensíveis e envio de arquivos. 
+            OBS1: o metódo POST faz com quê não apareça os dados do usuário na url.
+            OBS2: O metódo GET só aceita no máximo 3 mil bytes, ou seja, aproximadamento 3 mil letras.
+            Deve-se utilizar o metódo POST para envios acima disso.
+            OBS3: O metódo GET não aceita envio de arquivos. Exemplo: Foto, Video, PDF, entre outros. Deve-se utilizar o metódo POST para fazer envio de arquivos.
+        -->
+        <!-- autocomplete="off", retira o auto completar do formulário -->
+
         <p><label for="inome">Nome:</label> <!-- O label serve para relacionar o TEXTO a UMA CAIXA DE TEXTO-->
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> 
