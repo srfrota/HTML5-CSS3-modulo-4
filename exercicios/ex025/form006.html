@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário | color, range, file</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="Cor" id="icor" value="#00ff00">
+        </p>
+        <!--
+            color | serve para o usuário escolher uma cor.
+            Obs1: É possível adicionar uma value para determinar uma cor de início.
+        -->
+
+        <p>
+            <label for="inivel">Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </p>
+        <!--
+            range | serve para o usuário escolher uma valor némerico arrastando um ponto. 
+            Obs1: É possível adicionar um value para determinar um valor de início.
+            Obs2: É possível adicionar um "min" para valor mínimo e "max" para valor máximo.
+        -->
+        <p>
+            <label for="ifoto">Foto do perfil:</label>
+            <input type="file" name="Foto" id="ifoto">
+        </p>
+        <!--
+            file | serve para o usuário fazer um envio de arquivo.
+            obs1: Lembre-se de sempre colocar o method='post'.
+        -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
